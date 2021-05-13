@@ -1,6 +1,6 @@
 # new
 > [JavaScript深入之new的模拟实现](https://github.com/mqyqingfeng/Blog/issues/13)  
->[构造器和操作符 "new"](https://zh.javascript.info/constructor-new#gou-zao-qi-mo-shi-ce-shi-newtarget)
+> [构造器和操作符 "new"](https://zh.javascript.info/constructor-new#gou-zao-qi-mo-shi-ce-shi-newtarget)
 
 ### 一、实现及原理
 ```javascript
