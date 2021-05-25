@@ -49,9 +49,6 @@
   - [驼峰和下划线转换](base/codeWriting/hump.md)
   - [Curry](base/codeWriting/curry.md)
 - **面试复盘**
-  - [排序算法](base/test.md)
-- **算法**
-  - [排序算法](base/test.md)
 - **HTML**
 - **CSS**
   - [层叠上下文](base)
