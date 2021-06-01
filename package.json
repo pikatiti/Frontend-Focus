@@ -1,0 +1,23 @@
+{
+  "name": "frontend-focus",
+  "version": "1.0.0",
+  "description": "> An awesome project.",
+  "main": "test.js",
+  "type": "module",
+  "scripts": {
+    "test": "promises-aplus-tests ./demo/promise/promise2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pikatiti/Frontend-Focus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pikatiti/Frontend-Focus/issues"
+  },
+  "homepage": "https://github.com/pikatiti/Frontend-Focus#readme",
+  "dependencies": {
+    "promises-aplus-tests": "^2.1.2"
+  }
+}

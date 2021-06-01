@@ -26,7 +26,7 @@
 //     }]
 //   }]
 // }
-
+import createTree from './createTree';
 const tree = {
   val: 'F',
   left: {
@@ -71,8 +71,18 @@ const dfs = (root) => {
   root.children.forEach(dfs)
 }
 // dfs(tree)
+var hasPathSum = function(root, targetSum) {
+  if (root.left) {
+    return hasPathSum(root.left, targetSum - root.val)
+  }
+  if (root.right) {
+    return hasPathSum(root.right, targetSum - root.val)
+  }
+  return root.val === targetSum.val
+};
 
 str = ''
+
 const bfs = (root) => {
   const queue = [root]
   while(queue.length) {
