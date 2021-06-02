@@ -41,3 +41,7 @@ select * from user where username='xxx' or '1=1' and password='xxx' or '1=1'
 #### 2. 如何解决
 - 前端做输入校验，如：不允许输入特殊字符
 - 后端对关键字符做转换，如：mysql.escape(xxxx)
+
+
+
+https://blog.csdn.net/duninet/article/details/111171699

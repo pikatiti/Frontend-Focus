@@ -1,10 +1,12 @@
 # 状态码
-> [HTTP状态码](https://www.runoob.com/http/http-status-codes.html)
-### 一、请求码
-- 1**	信息，服务器收到请求，需要请求者继续执行操作
-  - 100 ？？？
+- 1**	信息，服务器收到请求，需要请求者继续执行操作（没特别问就别回答1XX了）
+  - 100 Continue，请求一次没发送完，需要继续发送
 - 2**	成功，操作被成功接收并处理
 - 3**	重定向，需要进一步的操作以完成请求
-  - 304 协商缓存生效，返回304，详见[]()
+  - 304 协商缓存生效，返回304，详见浏览器缓存
 - 4**	客户端错误，请求包含语法错误或无法完成请求
+  - 401 Unauthorized —— 缺失或错误的认证
+  - 404 not found
+  - 403 Forbidden —— 认证后无访问权限
+  - 415 Unsupported Media Type —— 如后端不支持‘application/x-www-form-urlencoded’，需要ContentType传‘application/json’
 - 5**	服务器错误，服务器在处理请求的过程中发生了错误
