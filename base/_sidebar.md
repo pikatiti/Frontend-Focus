@@ -31,26 +31,27 @@
   - [状态码Status Code](base/network/code.md)
   - [负载均衡](base/network/loadBalance.md)
 
+  - [Get和Post区别](base/network/request.md)
   - [DNS解析](base/network/dns.md)
   - [CDN](base/network/cdn.md)
   - [Https原理 | SSL 连接断开后如何恢复?](base/network/https.md)
   - [Cookie、Session、Token]
   - [Http-v1、1.0、1.1、v2、v3]
   - [TCP连接]
-  - [Get和Post区别](base/network/request.md)
   - [常见网络攻击、react如何防止网络攻击](base/network/attacks.md)
   - [HTTPS 中间人攻击]
   - [单点登录、多个网站之间共享登录状态]
-  - [从输入 URL 到页面展示，发生了什么]
   - [即时通讯的实现，短轮询、长轮询、SSE 和 WebSocket 间的区别]
   - [UDP 和 TCP]
 - **浏览器**
+  - [浏览器存储](base/browser/storage.md)
+  
+  - [跨域问题（跨站区别）| 浏览器没有同源策略 | 同源策略解决什么|option](base/test.md)
+  
+  - [浏览器内核]
   - [浏览器中输入网址后到页面展现的过程](base/)
   - [浏览器缓存](base/test.md)
-  - [跨域问题（跨站区别）| 浏览器没有同源策略 | 同源策略解决什么|option](base/test.md)
-  - [localStorage、sessionstorage、cookie、cookie原理、CacheStorage、浏览器存储]
   - [垃圾回收机制]
-  - [浏览器内核]
   - [浏览器原理]
   - [重绘、回流]
   - [EventLoop]

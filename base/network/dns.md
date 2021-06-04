@@ -13,7 +13,6 @@ DNS(Domain Name System)即“域名系统”，主要实现域名和IP的映射�
 |  二级域名  | 单元格 | baidu.com. | / |
 |  三级域名  | 单元格 | www.baidu.com. | www是主机名 |
 - Public Suffix(公共后缀) === eTLD(有效顶级域名)，github.io、com.cn这种都属于eTLD，[完整的eTLD列表](https://publicsuffix.org/list/public_suffix_list.dat)，具体解释详见“浏览器存储”章节，可用于跨站划分。
-- 
 
 ### 解析过程
 - 访问https://www.baidu.com/
