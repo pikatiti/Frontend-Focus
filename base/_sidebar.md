@@ -1,14 +1,18 @@
 - **JavaScript**
   - [原型链](base/javascript/prototypeChain.md)
   - [词法作用域和动态作用域](base/javascript/scope.md)
-  - [执行上下文栈](base/javascript/ecStack.md)
+  - [类型转换](base/javascript/typeConversion.md)
+  - [值比较](base/javascript/compare.md)
+  - [类型判断](base/javascript/typeJudge.md)
+
+
+  - ----分界线----
   <!-- - [变量对象](base/javascript/vo.md) -->
   <!-- - [作用域链](base/javascript/scopeChain.md) -->
   <!-- - [执行上下文](base/javascript/ec.md) -->
+  - [执行上下文栈](base/javascript/ecStack.md)
   - [闭包](base)
   - [循环遍历](base)
-  - [类型判断](base)
-  - [类型转换](base)
   - [this](base)
   - [ECMAScript 6](base)
   - [ECMAScript 7](base)
@@ -30,7 +34,7 @@
   - [Proxy代理](base/network/proxy.md)
   - [状态码Status Code](base/network/code.md)
   - [负载均衡](base/network/loadBalance.md)
-
+  - ----分界线----
   - [Get和Post区别](base/network/request.md)
   - [DNS解析](base/network/dns.md)
   - [CDN](base/network/cdn.md)
@@ -45,16 +49,16 @@
   - [UDP 和 TCP]
 - **浏览器**
   - [浏览器存储](base/browser/storage.md)
-  
+  - ----分界线----
+
   - [跨域问题（跨站区别）| 浏览器没有同源策略 | 同源策略解决什么|option](base/test.md)
-  
-  - [浏览器内核]
+  - [浏览器内核]()
   - [浏览器中输入网址后到页面展现的过程](base/)
   - [浏览器缓存](base/test.md)
-  - [垃圾回收机制]
-  - [浏览器原理]
-  - [重绘、回流]
-  - [EventLoop]
+  - [垃圾回收机制]()
+  - [浏览器原理]()
+  - [重绘、回流]()
+  - [EventLoop]()
 - **手写题**
   - [Instanceof](base/codeWriting/instanceof.md)
   - [new](base/codeWriting/new.md)
@@ -74,11 +78,11 @@
 - **比较新的东西**
   - [WebAssembly]
 - **其他**
-  - [git fetch rebase merge]
-  - [seo]
+  - [git fetch rebase merge]()
+  - [seo]()
 - **亮点**
-- 加载优化
-- 国际化
-- 打包
-- 跨域处理https://juejin.cn/post/6844904098148384776
+  - [加载优化]
+  - [国际化]
+  - [打包]
+  - [跨域处理](https://juejin.cn/post/6844904098148384776)
 
