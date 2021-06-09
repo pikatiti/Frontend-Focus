@@ -64,6 +64,7 @@ new String('xx')
 - 调用 toString, 返回结果A是原始类型，返回 String(A)
 - 否则调用 valueOf, 返回结果A是原始类型，返回 String(A)
 - 否则报错
+
 ### Object ——> Number
 - 调用 valueOf, 返回结果A是原始类型，返回 String(A)
 - 否则调用 toString, 返回结果A是原始类型，返回 String(A)
@@ -79,6 +80,7 @@ Number([]) // 0
 {}.toString() // "[object Object]"
 Number({}) // NaN
 ```
+
 ### Object ——> Boolean
 一律返回true
 
