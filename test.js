@@ -1,61 +1,29 @@
-function f(next) {
-  console.log(1)
-  next()
-  console.log(2)
-}
-function g(next) {
-  console.log(3)
-  next()
-  console.log(4)
-}
-function h(next) {
-  console.log(5)
-  next()
-  console.log(6)
-}
-
-
-  // return function(){
-  //   f(
-  //     function(){
-  //       g(
-  //         function() {
-  //           h(
-  //             function() {}
-  //           )
-  //         }
-  //       )
-  //     }
-  //   )
-  // }
-
-function compose(...funcs) {
-  let next = function(){}
-  for(let i = funcs.length - 1; i >= 0; i--) {
-    const func = funcs[i]
-    next = function(){
-      func(next)
+obj = {
+  a: 1,
+  b: 2,
+  c: 3,
+  d: 4,
+  e: 5,
+  [Symbol.iterator]: function (){
+    return {
+      next: function () {
+        return {
+          done: '',
+          value: ,
+        }
+      }
     }
   }
-  return next
 }
 
-function compose(...funcs) {
-  let next = function(){}
-  let pre = next
-  for(let i = funcs.length - 1; i >= 0; i--) {
-    const func = funcs[i]
-    pre = next
-    next = function(){
-      func(pre)
-    }
-  }
-  return next
+obj = {
+  a: 1,
+  b: 2,
+  c: 3,
+  d: 4,
+  e: 5
 }
 
-compose(h)()
-// 输出 1,3,5,6,4,2
-
-// next = dd()
-
-
+for (let i of obj) {
+  console.log('i :>> ', i)
+}
