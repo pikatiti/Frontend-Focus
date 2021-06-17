@@ -4,7 +4,10 @@
   - [类型转换](base/javascript/typeConversion.md)
   - [值比较](base/javascript/compare.md)
   - [类型判断](base/javascript/typeJudge.md)
-  - [循环遍历](base/javascript/iterate.md)
+  - [循环遍历](base/javascript/loop.md)
+  
+  - [迭代器](base/javascript/iterate.md)
+  - 
 
 
   - ----分界线----
