@@ -27,6 +27,7 @@ Object.entries(obj) // [["a", 10], ["b", 11]]
 Object.keys(obj) // ["a", "b"]
 Object.values(obj) // ["10", "11"]
 ```
+
 ### 三、通用遍历
 - while、do...while、for、for...in...、for...of
 
@@ -39,10 +40,12 @@ Object.values(obj) // ["10", "11"]
   - 原型属性，按原型链顺序往上
   - 整数属性: Number(string) 和 string 长一样的属性，如45是整数属性，+45、1.2都不是整数属性
 - 可枚举属性: 内部 “可枚举” 标志设置为 true 的属性，直接的赋值和属性初始化的属性，该标识值默认为即为 true，对于通过 Object.defineProperty 等定义的属性，该标识值默认为 false
+
 ##### 2. for of
 > for...of语句在**可迭代对象**上创建一个迭代循环，调用自定义的迭代钩子，并为对象的每个不同属性的值执行语句
-- [可迭代对象](./iterate.md)
+- [可迭代对象](/base/javascript/iterate.md)
 - 内置可迭代对象: String、Array、Map、Set、arguments对象等
+
 ##### 3. for in、for of区别
 > https://segmentfault.com/q/1010000006658882
 - for...in——一般用于对象，循环出的是key。for...of——一般用于数组，循环出的是value。
