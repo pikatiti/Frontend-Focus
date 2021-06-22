@@ -6,6 +6,7 @@
   - [类型判断](base/javascript/typeJudge.md)
   - [循环遍历](base/javascript/loop.md)
   - [迭代器 & 生成器](base/javascript/iterate.md)
+  - [Async/Await](base/javascript/async-await.md)
   - [ECMAScript](base/javascript/es.md)
     - [ECMAScript 6](base/javascript/es6.md)
     - [ECMAScript 7](base/javascript/es7.md)

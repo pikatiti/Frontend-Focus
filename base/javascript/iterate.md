@@ -121,9 +121,14 @@ alert(str); // 0..9A..Za..z
 
 ##### 误区
 之前一直以为Promise是Generator的改进，应该是哪里混乱了
+
 现在的理解是：
+
 Generator 是 Iterator的改进
+
 Generator 和 Async/Await都是使用Promise的“载体”
+
 通过Generator + Promise 或者 Async/Await + Promise 可以解决会掉地狱的问题
+
 async/await 是 Generator + Promise 的语法糖～
 

@@ -1,39 +1,30 @@
-let obj = {
-  a: 'aa',
-  b: 'bb',
-  c: 'cc'
+async function async2() {
+  console.log('async2 start');
+  return new Promise((resolve, reject) => {
+   resolve();
+   console.log('async2 promise');
+  })
 }
 
-// obj[Symbol.iterator] = function () {
-//   const parentThis = this
-//   return {
-//     currentIdx: 0,
-//     next: function() {
-//       const totalLength = Object.keys(parentThis).length
-//       const values = Object.values(parentThis)
-//       if(this.currentIdx < totalLength) {
-//         return {done: false, value: values[this.currentIdx++]}
-//       } else {
-//         return {done: true}
-//       }
-//     }
-//   }
-// }
+new Promise((resolve, reject) => {
+  console.log('async2 start');
+  resolve(
+    new Promise((resolve, reject) => {
+      resolve();
+      console.log('async2 promise');
+    })
+  )
+})
 
-obj[Symbol.iterator] = function*() {
-  for(let i = 0; i < Object.keys(this).length; i++) {
-    const key = Object.keys(this)[i]
-    yield this[key]
-  } 
-}
 
-const iterator = obj[Symbol.iterator]()
-console.log('test :>> ', iterator.next())
-console.log('test :>> ', iterator.next())
-console.log('test :>> ', iterator.next())
-console.log('test :>> ', iterator.next())
-console.log('test :>> ', iterator.next())
-
-for (let i of obj) {
-  console.log('i :>> ', i)
-}
+new Promise((rs, rj) => {
+  console.log('async2 start');
+  new Promise((resolve, reject) => {
+    reject();
+    console.log('async2 promise');
+  }).then(() => {
+    rs()
+  })
+}).then(() => {
+  
+})

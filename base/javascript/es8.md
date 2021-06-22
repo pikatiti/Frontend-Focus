@@ -4,6 +4,9 @@
 第 8 版，即ECMAScript 2017、ES2017、ES8
 以下只关注常见的一些新特性～
 
+### Async/Await
+指路[Async/Await](base/javascript/async-await.md)
+
 ### Object.values/entries/getOwnPropertyDescriptors
 ```js
 obj = {
@@ -35,11 +38,6 @@ Object.getOwnPropertyDescriptors(obj)
 
 ### String.prototype.padStart()/padEnd()
 字符串填充功能
-
-### Async/Await
-- 个人观点，搬运[迭代器](/base/javascript/iterate.md)的观点，async/await 是 Generator + Promise解决异步问题的语法糖，而不是generator的语法糖。
-
-
 
 ### 其他
 - ShareArrayBuffer和Atomics对象
