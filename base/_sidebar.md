@@ -24,6 +24,11 @@
   - [执行上下文栈](base/javascript/ecStack.md)
   - [闭包](base/javascript/closure.md)
   - [this](base)
+  - [let & const](base/javascript/let-const.md)
+  - [箭头函数](base/javascript/arrowfunc.md)
+  - [Class](base/javascript/class.md)
+  - [Proxy & Reflex](base/javascript/proxy-reflex.md)
+  - [WeakMap & WeakSet](base/javascript/set-map.md)
 - **React**
   - [生命周期函数](base/guide.md)
   - [React Diff](base/guide.md)

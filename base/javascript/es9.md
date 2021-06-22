@@ -10,7 +10,7 @@ for...of: 遍历同步的 [Iterator](/base/javascript/iterate.md)
 for await...of: 可遍历异步、同步的 Iterator(一般用于异步)
 
 ### Promise.prototype.finally
-实现见[Promise](../codeWriting/promise.md)
+实现见[Promise](base/codeWriting/promise.md)
 
 ### 扩展运算符‘...’
 原先三个点（...）展开符仅用于数组，此版本扩展运算符支持普通对象
