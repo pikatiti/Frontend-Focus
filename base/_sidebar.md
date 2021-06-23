@@ -23,6 +23,7 @@
   <!-- - [执行上下文](base/javascript/ec.md) -->
   - [执行上下文栈](base/javascript/ecStack.md)
   - [闭包](base/javascript/closure.md)
+  - [arguments](base/javascript/closure.md)
   - [this](base)
   - [let & const](base/javascript/let-const.md)
   - [箭头函数](base/javascript/arrowfunc.md)

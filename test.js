@@ -1,30 +1,15 @@
-async function async2() {
-  console.log('async2 start');
-  return new Promise((resolve, reject) => {
-   resolve();
-   console.log('async2 promise');
-  })
-}
+var birth = 1000
+var obj = {
+  birth: 1990,
+  getAge: function () {
+      var b = this.birth; // 1990
+      console.log(b)
+      var fn = function () {
+          return this.birth
+      };
+      return fn();
+  }
+};
 
-new Promise((resolve, reject) => {
-  console.log('async2 start');
-  resolve(
-    new Promise((resolve, reject) => {
-      resolve();
-      console.log('async2 promise');
-    })
-  )
-})
+obj.getAge()
 
-
-new Promise((rs, rj) => {
-  console.log('async2 start');
-  new Promise((resolve, reject) => {
-    reject();
-    console.log('async2 promise');
-  }).then(() => {
-    rs()
-  })
-}).then(() => {
-  
-})
