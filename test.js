@@ -1,15 +1,15 @@
-var birth = 1000
-var obj = {
-  birth: 1990,
-  getAge: function () {
-      var b = this.birth; // 1990
-      console.log(b)
-      var fn = function () {
-          return this.birth
-      };
-      return fn();
-  }
-};
+var funcs = [];
+// for (var i = 0; i < 3; i++) {
+//     funcs[i] = function () {
+//         console.log(i);
+//     };
+// }
+for (let i = 0; i < 3; i++) {
+  funcs[i] = function () {
+      console.log(i);
+  };
+}
 
-obj.getAge()
+funcs[0]();
+
 

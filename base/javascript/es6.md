@@ -13,6 +13,7 @@ https://zhuanlan.zhihu.com/p/24570791
 - 对象属性
   - 支持简写```{x: x}``` => ```{x}```
   - 属性计算```{['a' + 'b']: x}```
+- Class
 - 解构赋值
   ```js
   // 数组为例，对象同理
@@ -22,7 +23,6 @@ https://zhuanlan.zhihu.com/p/24570791
   console.log(c) // 3
   ```
 - [模块化](base/project/module.md)
-- [Class](base/javascript/class.md)
 - [迭代器 & 生成器](base/javascript/iterate.md)
 - [for of](base/javascript/loop.md)
 - [Promise](base/codeWriting/promise.md)

@@ -15,9 +15,11 @@
 - 网上面试题会有map、forEach等能否中断的问题，主要是理解传给map等函数的是一个“callback函数”，return、break、continue都是对这个函数进行的！
 
 ### 二、常见Object遍历
-- Object.entries
-- Object.keys
-- Object.values
+- for in —— 遍历所有带有 enumerable 标志的非 Symbol 键, <font color=red>包括</font>原型
+- Object.keys / Object.values / Object.entries —— 返回带有 enumerable 标志的非 Symbol 键/值, 不包括原型
+- Object.getOwnPropertyNames —— 返回非 Symbol 键
+- Object.getOwnPropertySymbols —— 返回 Symbol 键
+
 ```js
 obj = {
   a: 10,

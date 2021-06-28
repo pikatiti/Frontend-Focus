@@ -7,6 +7,11 @@
   - [循环遍历](base/javascript/loop.md)
   - [迭代器 & 生成器](base/javascript/iterate.md)
   - [Async/Await](base/javascript/async-await.md)
+  - [Proxy & Reflex](base/javascript/proxy-reflex.md)
+  - [WeakMap & WeakSet](base/javascript/weakset-weakmap.md)
+  - [Arguments](base/javascript/arguments.md)
+  - [箭头函数](base/javascript/arrowfunc.md)
+  - [let & const](base/javascript/let-const.md)
   - [ECMAScript](base/javascript/es.md)
     - [ECMAScript 6](base/javascript/es6.md)
     - [ECMAScript 7](base/javascript/es7.md)
@@ -15,21 +20,14 @@
     - [ECMAScript 10](base/javascript/es10.md)
     - [ECMAScript 11](base/javascript/es11.md)
 
-
-
   - ----分界线----
   <!-- - [变量对象](base/javascript/vo.md) -->
   <!-- - [作用域链](base/javascript/scopeChain.md) -->
   <!-- - [执行上下文](base/javascript/ec.md) -->
   - [执行上下文栈](base/javascript/ecStack.md)
   - [闭包](base/javascript/closure.md)
-  - [arguments](base/javascript/closure.md)
   - [this](base)
-  - [let & const](base/javascript/let-const.md)
-  - [箭头函数](base/javascript/arrowfunc.md)
-  - [Class](base/javascript/class.md)
-  - [Proxy & Reflex](base/javascript/proxy-reflex.md)
-  - [WeakMap & WeakSet](base/javascript/set-map.md)
+
 - **React**
   - [生命周期函数](base/guide.md)
   - [React Diff](base/guide.md)
@@ -37,6 +35,8 @@
   - [setState同步异步](base/)
   - [Hooks差异和对比](base/)
   - [React懒加载React.lazy和Suspense]
+- **ts**
+  - 装饰器
 - **工程化**
   - [webpack](base/project/webpack.md)
   - [babel](base/project/babel.md)
@@ -81,6 +81,7 @@
   - [Sleep](base/codeWriting/sleep.md)
   - [驼峰和下划线转换](base/codeWriting/hump.md)
   - [Curry](base/codeWriting/curry.md)
+  - [Class](base/codeWriting/class.md)
 - **面试复盘**
 - **HTML**
 - **CSS**
