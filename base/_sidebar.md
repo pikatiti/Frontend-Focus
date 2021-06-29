@@ -20,13 +20,12 @@
     - [ECMAScript 10](base/javascript/es10.md)
     - [ECMAScript 11](base/javascript/es11.md)
 
-  - ----分界线----
   <!-- - [变量对象](base/javascript/vo.md) -->
   <!-- - [作用域链](base/javascript/scopeChain.md) -->
   <!-- - [执行上下文](base/javascript/ec.md) -->
-  - [执行上下文栈](base/javascript/ecStack.md)
-  - [闭包](base/javascript/closure.md)
-  - [this](base)
+  - [执行上下文栈(未完成)](base/javascript/ecStack.md)
+  - [闭包(未完成)](base/javascript/closure.md)
+  - [this(未完成)](base)
 
 - **React**
   - [生命周期函数](base/guide.md)
