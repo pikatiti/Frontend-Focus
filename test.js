@@ -1,15 +1,9 @@
-var funcs = [];
-// for (var i = 0; i < 3; i++) {
-//     funcs[i] = function () {
-//         console.log(i);
-//     };
-// }
-for (let i = 0; i < 3; i++) {
-  funcs[i] = function () {
-      console.log(i);
-  };
+function Test() {
+  this.name = 111
+  console.log(this) // Test { name: 111 }
+  return {
+    name: 222
+  }
 }
-
-funcs[0]();
-
-
+const test = new Test()
+console.log(test) // Test { name: 222 }

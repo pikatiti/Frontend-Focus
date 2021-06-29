@@ -40,7 +40,7 @@ obj.user.name = 'Nike' // 修改有效，只能保证第一层属性不可变
 - 作用域: 全局作用域、函数作用域。块级作用域
 - let & const: 全局作用域、函数作用域。块级作用域。
 - var: 全局作用域、函数作用域。
-- 块级作用域: {} 内，如for、if
+- 块级作用域: {} 内，如for、if，<font color=red><font>
 ```js
 var funcs = [];
 for (var i = 0; i < 3; i++) {

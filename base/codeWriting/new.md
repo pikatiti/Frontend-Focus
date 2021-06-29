@@ -22,7 +22,7 @@ let person = _new(User, ...)
 - 获取传入的构造函数
 - 构造原型链
 - 改变构造函数this指向，并执行（为这个this(新对象)添加属性）
-- 函数有‘object’类型返回值，则返回；否则，返回新对象
+- 函数有‘object’类型返回值，则返回；否则，返回新对象(null不是object类型哦！return null还是返回原this)
 
 ### 二、其他知识点
 #### 1. new.target
