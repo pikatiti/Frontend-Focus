@@ -9,8 +9,7 @@
 2. Await 操作符用于等待一个Promise对象
 
 根据以上信息，我们可以得到:Async/Await如何转Promise
-- 把 await XXX 转为 new Promise(...)
-- 把 async XXX 转为 new Promise(...)
+- 把 await XXX 转为 Promise.resolve(...)再转为new Promise(...)
 
 ```js
 async function async1(){
