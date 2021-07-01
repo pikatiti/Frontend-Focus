@@ -19,7 +19,7 @@ const square = function(number) { ... };
 ### 箭头函数和普通函数区别
 
 - 没有this、super、arguments、new.target，由外围最近一层非箭头函数决定。不应当用作对象方法，但适合用作类方法。<font color=red>(1)</font>
-- call()、apply()、bind()无效<font color=red>(2)</font>
+- call()、apply()、bind()无效，即不能改变this指向<font color=red>(2)</font>
 - 不能作为构造函数<font color=red>(3)</font>
 - 不能作为生成器函数<font color=red>(4)</font>
 - 没有原型<font color=red>(5)</font>
@@ -53,3 +53,17 @@ new Mike(124)
 <font color=red>(4): </font>生成器函数要用function*声明，箭头函数没有function关键字
 
 <font color=red>(5): </font>没有prototype 这个属性，即没有原型，也不能通过super 来访问原型的属性。
+
+### 避免使用箭头函数的4种场景
+- 作为对象方法
+- 定义原型方法
+- 构造函数使用箭头函数
+- 事件回调函数
+```js
+// 当单击事件发生时，浏览器会尝试用 button 作为上下文来执行事件回调函数，但是箭头函数不能改变this方向。
+const button = document.getElementById('myButton');
+button.addEventListener('click', () => {
+    console.log(this === window); // => true
+    this.innerHTML = 'Clicked button';
+});
+```

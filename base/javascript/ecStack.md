@@ -3,7 +3,7 @@
 >[JavaScript深入之变量对象](https://github.com/mqyqingfeng/Blog/issues/5)
 
 ### 总结
-#### 一. 执行上下文栈
+#### 一. 执行上下文
 - 当 JavaScript 代码<strong><font color="red">“执行”</font></strong>一段可执行代码(executable code)时，会创建对应的执行上下文(execution context)。
 - 可执行代码：全局代码、函数代码、eval代码。
 ##### 1. 理解下列执行上下文栈  
