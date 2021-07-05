@@ -24,6 +24,7 @@
   ![samesite各属性值区别](../media/samesite.png)
 
 ### 三、SQL注入
+
 #### 1. 是什么
 原sql
 ```sql
@@ -45,3 +46,24 @@ select * from user where username='xxx' or '1=1' and password='xxx' or '1=1'
 
 
 https://blog.csdn.net/duninet/article/details/111171699
+
+
+
+# react
+JSX 防止注入攻击
+你可以安全地在 JSX 当中插入用户输入内容：
+
+```js
+// 直接使用是安全的：
+const title = response.potentiallyMaliciousInput;
+const element = <h1>{title}</h1>;
+```
+
+React DOM 在渲染所有输入内容之前，默认会进行转义。它可以确保在你的应用中，永远不会注入那些并非自己明确编写的内容。所有的内容在渲染之前都被转换成了字符串。这样可以有效地防止 XSS（cross-site-scripting, 跨站脚本）攻击。
+
+
+必须要转译的字符
+ 1)  &lt; (<)
+ 2)  &gt; (>)
+ 3)  &amp; (&)
+ https://stackoverflow.com/questions/7381974/which-characters-need-to-be-escaped-in-html

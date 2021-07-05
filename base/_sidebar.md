@@ -13,21 +13,22 @@
   - [箭头函数](base/javascript/arrowfunc.md)
   - [let & const](base/javascript/let-const.md)
   - [this](base/javascript/this.md)
+  - [执行上下文栈](base/javascript/ecStack.md)
   - [ECMAScript](base/javascript/es.md)
 
-  <!-- - [变量对象](base/javascript/vo.md) -->
-  <!-- - [作用域链](base/javascript/scopeChain.md) -->
-  <!-- - [执行上下文](base/javascript/ec.md) -->
-  - [执行上下文栈(未完成)](base/javascript/ecStack.md)
-  - [闭包(未完成)](base/javascript/closure.md)
+  - [闭包（未完成）](base/javascript/closure.md)
+  - [设计模式](base/javascript/closure.md)
 
 - **React**
-  - [生命周期函数](base/guide.md)
-  - [React Diff](base/guide.md)
-  - [React Fiber](base)
-  - [setState同步异步](base/)
+  - [生命周期函数](base/react/lifecycles.md)
+  - [小问题汇总](base/react/qa.md)
+
+  - [React Fiber](base/react/fiber.md)
+  - [setState同步异步](base/react/state.md)
+  - [react key](base/react/key.md)
+  - [Virtual DOM & Diff](base/react/virtualDom.md)
   - [Hooks差异和对比](base/)
-  - [React懒加载React.lazy和Suspense]
+  - [HOC](base/react/hoc.md)
 - **ts**
   - 装饰器
 - **工程化**
@@ -40,10 +41,11 @@
   - [Proxy代理](base/network/proxy.md)
   - [状态码Status Code](base/network/code.md)
   - [负载均衡](base/network/loadBalance.md)
+  - [CDN](base/network/cdn.md)
   - ----分界线----
   - [Get和Post区别](base/network/request.md)
+  - [uri和url](base/network/request.md)
   - [DNS解析](base/network/dns.md)
-  - [CDN](base/network/cdn.md)
   - [Https原理 | SSL 连接断开后如何恢复?](base/network/https.md)
   - [Cookie、Session、Token]
   - [Http-v1、1.0、1.1、v2、v3]
@@ -52,7 +54,6 @@
   - [HTTPS 中间人攻击]
   - [单点登录、多个网站之间共享登录状态]
   - [即时通讯的实现，短轮询、长轮询、SSE 和 WebSocket 间的区别]
-  - [UDP 和 TCP]
 - **浏览器**
   - [浏览器存储](base/browser/storage.md)
   - ----分界线----
@@ -91,5 +92,6 @@
   - [加载优化]
   - [国际化]
   - [打包]
+  - [错误边界]
   - [跨域处理](https://juejin.cn/post/6844904098148384776)
 
