@@ -11,7 +11,6 @@
   - 跨域 原因、解决方案
   - es6 模块化 与 commonjs 区别
 - React
-  - 组件间通信方式
   - hooks 优缺点
   - hooks 实现原理
   - setState 原理

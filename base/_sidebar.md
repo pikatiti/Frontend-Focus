@@ -20,9 +20,9 @@
   - [设计模式](base/javascript/closure.md)
 
 - **React**
-  - [生命周期函数](base/react/lifecycles.md)
   - [小问题汇总](base/react/qa.md)
 
+  - [生命周期函数](base/react/lifecycles.md)
   - [React Fiber](base/react/fiber.md)
   - [setState同步异步](base/react/state.md)
   - [react key](base/react/key.md)
@@ -42,6 +42,7 @@
   - [状态码Status Code](base/network/code.md)
   - [负载均衡](base/network/loadBalance.md)
   - [CDN](base/network/cdn.md)
+
   - ----分界线----
   - [Get和Post区别](base/network/request.md)
   - [uri和url](base/network/request.md)
@@ -49,9 +50,10 @@
   - [Https原理 | SSL 连接断开后如何恢复?](base/network/https.md)
   - [Cookie、Session、Token]
   - [Http-v1、1.0、1.1、v2、v3]
-  - [TCP连接]
-  - [常见网络攻击、react如何防止网络攻击](base/network/attacks.md)
+  - [TCP & UDP](base/network/https.md)
+  - [常见网络攻击](base/network/attacks.md)
   - [HTTPS 中间人攻击]
+  - [网络劫持]
   - [单点登录、多个网站之间共享登录状态]
   - [即时通讯的实现，短轮询、长轮询、SSE 和 WebSocket 间的区别]
 - **浏览器**
@@ -76,22 +78,20 @@
   - [驼峰和下划线转换](base/codeWriting/hump.md)
   - [Curry](base/codeWriting/curry.md)
   - [Class](base/codeWriting/class.md)
-- **面试复盘**
-- **HTML**
 - **CSS**
   - [层叠上下文](base)
   - [格式化上下文BFC、IFC、FFC、GFC](base/guide.md)
   - [居中问题](base/guide.md)
-  - [动画](base/guide.md)
+  - [flex](base/guide.md)
+  - [小问题汇总](base/guide.md)
+  （选择器，盒模型，position，像素）
 - **比较新的东西**
   - [WebAssembly]
-- **其他**
-  - [git fetch rebase merge]()
-  - [seo]()
 - **亮点**
   - [加载优化]
   - [国际化]
   - [打包]
   - [错误边界]
   - [跨域处理](https://juejin.cn/post/6844904098148384776)
+- **面试复盘**
 
