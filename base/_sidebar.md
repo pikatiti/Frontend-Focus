@@ -36,16 +36,15 @@
   - [babel](base/project/babel.md)
   - [模块化](base/project/module.md)
   - [前端路由的实现方式]
-  - [网站性能优化,页面的可用性时间的计算performanceapi](https://mp.weixin.qq.com/s?__biz=MzUxMTcwOTM4Mg==&mid=2247483962&idx=1&sn=f9337ad983c6303811eb43d07d9f23d5&chksm=f96edb93ce195285943211e645cc683989826abdaaa8ab0b073a20761369ed04843c835c50b7#rd)
 - **计算机网络**
   - [Proxy代理](base/network/proxy.md)
   - [状态码Status Code](base/network/code.md)
   - [负载均衡](base/network/loadBalance.md)
   - [CDN](base/network/cdn.md)
+  - [Get和Post区别](base/network/request.md)
+  - [url编码 & uri](base/network/url.md)
 
   - ----分界线----
-  - [Get和Post区别](base/network/request.md)
-  - [uri和url](base/network/request.md)
   - [DNS解析](base/network/dns.md)
   - [Https原理 | SSL 连接断开后如何恢复?](base/network/https.md)
   - [Cookie、Session、Token]
