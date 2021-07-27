@@ -44,9 +44,9 @@
   - [Get和Post区别](base/network/request.md)
   - [url编码 & uri](base/network/url.md)
   - [TCP & UDP](base/network/tcp.md)
+  - [Cookie、Session、Token](base/network/auth.md)
 
   - ----分界线----
-  - [Cookie、Session、Token]
   - [Http-v1、1.0、1.1、v2、v3]
   - [DNS解析](base/network/dns.md)
   - [Https原理 | SSL 连接断开后如何恢复?](base/network/https.md)
@@ -58,7 +58,7 @@
   - [浏览器存储](base/browser/storage.md)
   - ----分界线----
 
-  - [跨域问题（跨站区别）| 浏览器没有同源策略 | 同源策略解决什么|option](base/test.md)
+  - [跨域问题（跨站区别）| 浏览器没有同源策略 | 同源策略解决什么|option，后端怎么做，允许header](base/test.md)
   - [浏览器内核]()
   - [浏览器中输入网址后到页面展现的过程](base/)
   - [浏览器缓存](base/test.md)
