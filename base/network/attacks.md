@@ -78,3 +78,6 @@ React DOM 在渲染所有输入内容之前，默认会进行转义。它可以�
 
 
  HTTPS中间人攻击：两台计算机之间有
+
+SameSite CSRF
+ 设置 HTTPOnly 属性可以防止客户端脚本通过 document.cookie 等方式访问 Cookie，有助于避免 XSS 攻击。

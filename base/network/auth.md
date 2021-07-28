@@ -16,7 +16,7 @@
 ##### token的好处
   - session保存在服务端，会占用大量的空间，token保存在客户端
   - token由签名能防止篡改，session不行
-  - 能防CSRF
+  - 能防CSRF，详见[常见网络攻击](base/network/attacks.md)
 
 ##### JWT: JSON Web Tokens
 > https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html
@@ -24,3 +24,7 @@
 - signature会加密，其他部分默认不加密，只是 Base64URL 一下
 - 一般放在Header的Authentication里
 - JWT 不仅可以用于认证，也可以用于交换信息（看组成部分的具体内容就知道了）
+
+
+#### 其他
+- SSO: 单点登录，能实现多个网站之间共享登录状态，登录了百度之后，访问百度文库、百度知道等不用重新登录

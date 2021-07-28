@@ -44,15 +44,13 @@
   - [Get和Post区别](base/network/request.md)
   - [url编码 & uri](base/network/url.md)
   - [TCP & UDP](base/network/tcp.md)
-  - [Cookie、Session、Token](base/network/auth.md)
+  - [认证](base/network/auth.md)
+  - [DNS解析](base/network/dns.md)
 
   - ----分界线----
   - [Http-v1、1.0、1.1、v2、v3]
-  - [DNS解析](base/network/dns.md)
-  - [Https原理 | SSL 连接断开后如何恢复?](base/network/https.md)
+  - [Https原理](base/network/https.md)
   - [常见网络攻击](base/network/attacks.md)
-  - [网络劫持]
-  - [单点登录、多个网站之间共享登录状态]
   - [即时通讯的实现，短轮询、长轮询、SSE 和 WebSocket 间的区别]
 - **浏览器**
   - [浏览器存储](base/browser/storage.md)
