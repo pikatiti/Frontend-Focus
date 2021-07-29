@@ -29,8 +29,6 @@
   - [Virtual DOM & Diff](base/react/virtualDom.md)
   - [Hooks差异和对比](base/)
   - [HOC](base/react/hoc.md)
-- **ts**
-  - 装饰器
 - **工程化**
   - [webpack](base/project/webpack.md)
   - [babel](base/project/babel.md)
@@ -46,12 +44,11 @@
   - [TCP & UDP](base/network/tcp.md)
   - [认证](base/network/auth.md)
   - [DNS解析](base/network/dns.md)
+  - [Https原理](base/network/https.md)
 
   - ----分界线----
   - [Http-v1、1.0、1.1、v2、v3]
-  - [Https原理](base/network/https.md)
   - [常见网络攻击](base/network/attacks.md)
-  - [即时通讯的实现，短轮询、长轮询、SSE 和 WebSocket 间的区别]
 - **浏览器**
   - [浏览器存储](base/browser/storage.md)
   - ----分界线----
