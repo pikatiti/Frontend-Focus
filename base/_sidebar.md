@@ -45,9 +45,7 @@
   - [认证](base/network/auth.md)
   - [DNS解析](base/network/dns.md)
   - [Https原理](base/network/https.md)
-
-  - ----分界线----
-  - [Http-v1、1.0、1.1、v2、v3]
+  - [Http-v1、v2、v3](base/network/http.md)
   - [常见网络攻击](base/network/attacks.md)
 - **浏览器**
   - [浏览器存储](base/browser/storage.md)
@@ -78,10 +76,8 @@
   - [flex](base/guide.md)
   - [小问题汇总](base/guide.md)
   （选择器，盒模型，position，像素）
-- **比较新的东西**
-  - [WebAssembly]
 - **亮点**
-  - [加载优化]
+  - [性能优化]
   - [国际化]
   - [打包]
   - [错误边界]
