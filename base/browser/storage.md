@@ -18,7 +18,7 @@ HTTP是无状态协议，部分网络请求需要知道用户上一次做了什�
 - Secure属性: 只有https时候传输Cookie
 - SameSite: Cookie 在跨站请求时不会被发送，从而可以阻止CSRF
   - Strict 仅允许同站携带Cookie
-  - Lax 允许部分跨站请求携带 Cookie (链接，预加载，get表单)
+  - Lax 允许部分请求携带 Cookie (链接，预加载，get表单)
   - None 无论是否跨站都会发送 Cookie
   - 原来默认是None现在默认Lax
   - 解决: SameSite=none 属性，同时加上 Secure 属性 (HTTP 接口不支持 SameSite=none)

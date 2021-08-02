@@ -20,4 +20,9 @@
 
 - 如何不缓存
   - 链接后加时间戳、摘要、版本号等
+  - Post请求
+  - cache-control
+    - no-cache/max-age=0 本地不缓存，但是不限制服务器缓存，即直接走协商缓存。
+    - no-store 服务器和本地都不缓存
+    - 通过http的meta设置
   

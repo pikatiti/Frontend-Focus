@@ -50,12 +50,12 @@
   - [浏览器存储](base/browser/storage.md)
   - [垃圾回收机制](base/browser/gc.md)
   - [浏览器渲染](base/browser/render.md)
-  
-  - ----分界线----
   - [浏览器缓存](base/browser/cache.md)
-  - [浏览器原理](base/browser/other.md)
-  - [跨域问题（跨站区别）| 浏览器没有同源策略 | 同源策略解决什么|option，后端怎么做，允许header](base/test.md)
   - [EventLoop](base/browser/eventloop.md)
+  - [跨域问题](base/browser/cors.md)
+
+  - ----分界线----
+  - [浏览器原理](base/browser/other.md)
 - **手写题**
   - [Instanceof](base/codeWriting/instanceof.md)
   - [new](base/codeWriting/new.md)
@@ -71,7 +71,7 @@
   - [格式化上下文BFC](base/guide.md)
   - [居中问题](base/guide.md)
   - [flex](base/guide.md)
-  - [小问题汇总](base/guide.md)
+  - [盒模型](base/guide.md)
 - **亮点**
   - [打包优化]
   - [下载]
