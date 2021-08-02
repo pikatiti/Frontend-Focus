@@ -55,3 +55,6 @@ React DOM 在渲染所有输入内容之前，默认会进行转义。它可以�
 const title = response.potentiallyMaliciousInput;
 const element = <h1>{title}</h1>;
 ```
+
+### 五、CSP
+在Content-Security-Policy头里配置策略，指定什么样的资源是可以安全加载的，不在策略内的就拒绝加载，主要方式XSS

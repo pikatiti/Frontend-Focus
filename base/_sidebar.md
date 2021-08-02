@@ -33,7 +33,6 @@
   - [webpack](base/project/webpack.md)
   - [babel](base/project/babel.md)
   - [模块化](base/project/module.md)
-  - [前端路由的实现方式]
 - **计算机网络**
   - [Proxy代理](base/network/proxy.md)
   - [状态码Status Code](base/network/code.md)
@@ -49,16 +48,14 @@
   - [常见网络攻击](base/network/attacks.md)
 - **浏览器**
   - [浏览器存储](base/browser/storage.md)
+  - [垃圾回收机制](base/browser/gc.md)
+  - [浏览器渲染](base/browser/render.md)
+  
   - ----分界线----
-
+  - [浏览器缓存](base/browser/cache.md)
+  - [浏览器原理](base/browser/other.md)
   - [跨域问题（跨站区别）| 浏览器没有同源策略 | 同源策略解决什么|option，后端怎么做，允许header](base/test.md)
-  - [浏览器内核]()
-  - [浏览器中输入网址后到页面展现的过程](base/)
-  - [浏览器缓存](base/test.md)
-  - [垃圾回收机制]()
-  - [浏览器原理]()
-  - [重绘、回流]()
-  - [EventLoop]()
+  - [EventLoop](base/browser/eventloop.md)
 - **手写题**
   - [Instanceof](base/codeWriting/instanceof.md)
   - [new](base/codeWriting/new.md)
@@ -67,20 +64,16 @@
   - [Call、Apply、Bind](base/codeWriting/call-apply-bind.md)
   - [Sleep](base/codeWriting/sleep.md)
   - [驼峰和下划线转换](base/codeWriting/hump.md)
-  - [Curry](base/codeWriting/curry.md)
   - [Class](base/codeWriting/class.md)
+  - [Curry](base/codeWriting/curry.md)
 - **CSS**
   - [层叠上下文](base)
-  - [格式化上下文BFC、IFC、FFC、GFC](base/guide.md)
+  - [格式化上下文BFC](base/guide.md)
   - [居中问题](base/guide.md)
   - [flex](base/guide.md)
   - [小问题汇总](base/guide.md)
-  （选择器，盒模型，position，像素）
 - **亮点**
-  - [性能优化]
-  - [国际化]
-  - [打包]
-  - [错误边界]
-  - [跨域处理](https://juejin.cn/post/6844904098148384776)
+  - [打包优化]
+  - [下载]
 - **面试复盘**
 
