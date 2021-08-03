@@ -53,8 +53,6 @@
   - [浏览器缓存](base/browser/cache.md)
   - [EventLoop](base/browser/eventloop.md)
   - [跨域问题](base/browser/cors.md)
-
-  - ----分界线----
   - [浏览器原理](base/browser/other.md)
 - **手写题**
   - [Instanceof](base/codeWriting/instanceof.md)
