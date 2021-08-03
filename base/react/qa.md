@@ -84,7 +84,7 @@ const MyComponent = () => (
 - JSX 如何防止注入攻击 —— 会在渲染 JSX 中嵌入的任何值之前对其进行转义，重点转译```<>&```
 - 如何更新已渲染的元素 —— 重新render，元素不能被更改
 - 我可以导入一个 SVG 文件作为 React 组件么 —— yes
-- 什么是渲染属性 —— renderprops
+- 什么是渲染属性 —— render props
 - 对于渲染属性来说是否必须将 prop 属性命名为 render? —— 不用
 - 如何实现 Server Side Rendering 或 SSR? —— ReactDOMServer
 - React16哪些生命周期方法将被弃用 —— ...WillMount、...WillReceiveProps、...WillUpdate

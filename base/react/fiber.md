@@ -7,3 +7,6 @@ https://github.com/acdlite/react-fiber-architecture
 
 https://www.zhihu.com/question/278328905
 https://zhuanlan.zhihu.com/p/37098539
+
+- 为什么用React Fiber
+  - 

@@ -20,7 +20,7 @@ XSS 攻击是页面被注入了恶意的代码，url 或者 表单等注入等�
 - CSRF总结: 通常发生在第三方, 攻击者不能获取到Cookie等信息
 #### 2. 如何解决
 - 通常发生在第三方: 阻止不明外域的访问 —— 同源检测、Samesite Cookie
-  - 同源检测：验证 HTTP Referer(协议+域名+查询参数, 不包含锚点信息) 或者 Origin(协议和域名)
+  - 同源检测：验证 HTTP Referer(协议+域名+查询参数, 不包含锚点信息) 或者 Origin(协议+域名+端口)
   - Samesite Cookie
 - 攻击者不能获取到Cookie: 提交时要求附加本域才能获取的信息 —— CSRF Token
   - 主要Token本身一般不放在Cookie里
