@@ -8,3 +8,4 @@
 - getDerivedStateFromProps —— 让组件在 props 变化时更新 state
 - getSnapshotBeforeUpdate —— 在发生更改之前从 DOM 中捕获一些信息给...DidUpdate
 - React16哪些生命周期方法将被废弃 —— ...WillMount、...WillReceiveProps、...WillUpdate
+  - 为什么：主要是用了Fiber架构，

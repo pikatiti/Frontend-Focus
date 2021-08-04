@@ -20,10 +20,11 @@
   - [设计模式](base/javascript/closure.md)
 - **React**
   - [小问题汇总](base/react/qa.md)
+  - [生命周期函数](base/react/lifecycles.md)
+
 
   - [Hooks差异和对比](base/react/hooks.md)
   - [setState同步异步](base/react/state.md)
-  - [生命周期函数](base/react/lifecycles.md)
   - [React Fiber](base/react/fiber.md)
   - [react key](base/react/key.md)
   - [Virtual DOM & Diff](base/react/virtualDom.md)

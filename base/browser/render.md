@@ -2,8 +2,8 @@
 
 - 根据 HTML 结构生成 DOM 树, 根据 CSS 生成 CSSOM（同时）
 - 将 DOM 和 CSSOM 整合形成 RenderTree
-- 布局 RenderTree(各元素尺寸、位置的计算)(Reflow)
-- 绘制 RenderTree(Repaint)
+- 布局layout RenderTree(各元素尺寸、位置的计算)(Reflow)
+- 绘制paint RenderTree(Repaint)
 - 遇到```<script>```时会阻塞解析，因为GUI线程和JS线程是互斥的
 
 - CSS的加载不会阻塞DOM解析，但是会阻塞渲染，即上述第一步是同时的，第二步要等到CSSOM和DOM都解析完毕才合成RenderTree
