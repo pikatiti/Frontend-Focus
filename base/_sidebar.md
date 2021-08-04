@@ -69,9 +69,9 @@
 - **CSS**
   - [盒模型](base/css/box.md)
   - [格式化上下文BFC](base/css/bfc.md)
+  - [居中问题](base/css/centered.md)
 
   - [层叠上下文](base)
-  - [居中问题](base/guide.md)
   - [flex](base/guide.md)
 - **亮点**
   - [打包优化]
