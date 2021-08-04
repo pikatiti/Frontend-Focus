@@ -47,6 +47,8 @@ const MyComponent = () => (
 - 目录嵌套控制在最多三到四个层级内
 
 ### 其他小问题
+> https://github.com/semlinker/reactjs-interview-questions
+
 - 什么是 JSX?
 - 什么是 Pure Components?
 - refs 有什么用? —— 获取类实例，获取dom，不能在函数组件使用ref，因为它没有实例。
@@ -73,7 +75,7 @@ const MyComponent = () => (
 - 如何在页面加载时聚焦一个输入元素
 - 在渲染方法中使用箭头函数好么
 - 如何防止函数被多次调用? —— 防抖、截流、RequestAnimationFrame
-- super() 和 super(props)` 有什么区别? —— 使用前者就拿不到props了
+- super() 和 super(props) 有什么区别? —— 使用前者就拿不到props了
 - HTML 和 React 事件处理有什么区别
   - react合成事件SyntheticEvent是对原生事件的跨浏览器包装
   - 一个是onclick， 一个是onClick
@@ -82,7 +84,7 @@ const MyComponent = () => (
 - JSX 如何防止注入攻击 —— 会在渲染 JSX 中嵌入的任何值之前对其进行转义，重点转译```<>&```
 - 如何更新已渲染的元素 —— 重新render，元素不能被更改
 - 我可以导入一个 SVG 文件作为 React 组件么 —— yes
-- 什么是渲染属性 —— renderprops
+- 什么是渲染属性 —— render props
 - 对于渲染属性来说是否必须将 prop 属性命名为 render? —— 不用
 - 如何实现 Server Side Rendering 或 SSR? —— ReactDOMServer
 - React16哪些生命周期方法将被弃用 —— ...WillMount、...WillReceiveProps、...WillUpdate

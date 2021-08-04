@@ -18,54 +18,45 @@
 
   - [闭包（未完成）](base/javascript/closure.md)
   - [设计模式](base/javascript/closure.md)
-
 - **React**
-  - [生命周期函数](base/react/lifecycles.md)
   - [小问题汇总](base/react/qa.md)
+  - [生命周期函数](base/react/lifecycles.md)
 
-  - [React Fiber](base/react/fiber.md)
+
+  - [Hooks差异和对比](base/react/hooks.md)
   - [setState同步异步](base/react/state.md)
+  - [React Fiber](base/react/fiber.md)
   - [react key](base/react/key.md)
   - [Virtual DOM & Diff](base/react/virtualDom.md)
-  - [Hooks差异和对比](base/)
   - [HOC](base/react/hoc.md)
-- **ts**
-  - 装饰器
+
+  - [Mobx]
+
 - **工程化**
   - [webpack](base/project/webpack.md)
   - [babel](base/project/babel.md)
   - [模块化](base/project/module.md)
-  - [前端路由的实现方式]
-  - [网站性能优化,页面的可用性时间的计算performanceapi](https://mp.weixin.qq.com/s?__biz=MzUxMTcwOTM4Mg==&mid=2247483962&idx=1&sn=f9337ad983c6303811eb43d07d9f23d5&chksm=f96edb93ce195285943211e645cc683989826abdaaa8ab0b073a20761369ed04843c835c50b7#rd)
 - **计算机网络**
   - [Proxy代理](base/network/proxy.md)
   - [状态码Status Code](base/network/code.md)
   - [负载均衡](base/network/loadBalance.md)
   - [CDN](base/network/cdn.md)
-  - ----分界线----
   - [Get和Post区别](base/network/request.md)
-  - [uri和url](base/network/request.md)
+  - [url编码 & uri](base/network/url.md)
+  - [TCP & UDP](base/network/tcp.md)
+  - [认证](base/network/auth.md)
   - [DNS解析](base/network/dns.md)
-  - [Https原理 | SSL 连接断开后如何恢复?](base/network/https.md)
-  - [Cookie、Session、Token]
-  - [Http-v1、1.0、1.1、v2、v3]
-  - [TCP连接]
-  - [常见网络攻击、react如何防止网络攻击](base/network/attacks.md)
-  - [HTTPS 中间人攻击]
-  - [单点登录、多个网站之间共享登录状态]
-  - [即时通讯的实现，短轮询、长轮询、SSE 和 WebSocket 间的区别]
+  - [Https原理](base/network/https.md)
+  - [Http-v1、v2、v3](base/network/http.md)
+  - [常见网络攻击](base/network/attacks.md)
 - **浏览器**
   - [浏览器存储](base/browser/storage.md)
-  - ----分界线----
-
-  - [跨域问题（跨站区别）| 浏览器没有同源策略 | 同源策略解决什么|option](base/test.md)
-  - [浏览器内核]()
-  - [浏览器中输入网址后到页面展现的过程](base/)
-  - [浏览器缓存](base/test.md)
-  - [垃圾回收机制]()
-  - [浏览器原理]()
-  - [重绘、回流]()
-  - [EventLoop]()
+  - [垃圾回收机制](base/browser/gc.md)
+  - [浏览器渲染](base/browser/render.md)
+  - [浏览器缓存](base/browser/cache.md)
+  - [EventLoop](base/browser/eventloop.md)
+  - [跨域问题](base/browser/cors.md)
+  - [浏览器原理](base/browser/other.md)
 - **手写题**
   - [Instanceof](base/codeWriting/instanceof.md)
   - [new](base/codeWriting/new.md)
@@ -74,24 +65,17 @@
   - [Call、Apply、Bind](base/codeWriting/call-apply-bind.md)
   - [Sleep](base/codeWriting/sleep.md)
   - [驼峰和下划线转换](base/codeWriting/hump.md)
-  - [Curry](base/codeWriting/curry.md)
   - [Class](base/codeWriting/class.md)
-- **面试复盘**
-- **HTML**
+  - [Curry](base/codeWriting/curry.md)
 - **CSS**
+  - [盒模型](base/css/box.md)
+  - [格式化上下文BFC](base/css/bfc.md)
+
   - [层叠上下文](base)
-  - [格式化上下文BFC、IFC、FFC、GFC](base/guide.md)
   - [居中问题](base/guide.md)
-  - [动画](base/guide.md)
-- **比较新的东西**
-  - [WebAssembly]
-- **其他**
-  - [git fetch rebase merge]()
-  - [seo]()
+  - [flex](base/guide.md)
 - **亮点**
-  - [加载优化]
-  - [国际化]
-  - [打包]
-  - [错误边界]
-  - [跨域处理](https://juejin.cn/post/6844904098148384776)
+  - [打包优化]
+  - [下载]
+- **面试复盘**
 

@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "Frontend-Focus",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"prettier.semi": false,
+		"editor.acceptSuggestionOnCommitCharacter": false
+	}
+}

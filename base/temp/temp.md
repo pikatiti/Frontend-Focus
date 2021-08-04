@@ -1,5 +1,4 @@
 # 面试题
-
 - JS 基础
   - 事件循环
   - ES6 新特性
@@ -22,7 +21,6 @@
 - 性能优化
   - 浏览器渲染原理
   - css、js 加载是否阻塞等
-  - CDN
   - 性能优化的方式
 - web安全
   - xss 含义、方式、防范
@@ -35,6 +33,64 @@
   - HTTPS
   - 请求方法
     - GET、POST 区别
+    - OPTIONS 请求
+  - 请求头
+    - origin 和 referer
+  - 状态码
+  - 缓存
+- webpack
+  - webpack 构建原理
+  - 优化思路
+  - 按需加载（tree shaking）原理
+  - 懒加载原理
+  - plugin 的实现
+  - loader 的实现
+- 设计模式
+  - 观察者模式 
+- 小程序
+  - 小程序的原理
+  - Taro 实现原理
+- CSS
+  - 盒模型
+  - BFC
+- 其他
+  - 对新技术的关注
+
+
+  # 面试题
+- JS 基础
+  - 事件循环
+  - ES6 新特性
+  - 箭头函数特点
+  - 原型继承
+  - 闭包
+  - Promise 解决了什么问题
+  - async/await 原理
+  - 跨域 原因、解决方案
+  - es6 模块化 与 commonjs 区别
+- React
+  - 组件间通信方式
+  - hooks 优缺点
+  - hooks 实现原理
+  - setState 原理
+  - 虚拟 DOM 与 diff 算法
+  - fiber
+  - 新生命周期与待废弃的生命周期，为什么要修改生命周期
+  - MobX 原理，与 Redux 区别
+- 性能优化
+  - 浏览器渲染原理
+  - css、js 加载是否阻塞等
+  - 性能优化的方式
+- web安全
+  - xss 含义、方式、防范
+  - csrf 含义、方式、防范
+  - cookie 安全性
+    - 有哪些字段
+    - same-site、http-only
+- HTTP
+  - HTTP/1 与 HTTP/2
+  - HTTPS
+  - 请求方法
     - OPTIONS 请求
   - 请求头
     - origin 和 referer

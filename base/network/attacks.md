@@ -1,31 +1,36 @@
 # 常见前端网络攻击
 > [浏览器系列之 Cookie 和 SameSite 属性](https://github.com/mqyqingfeng/Blog/issues/157)
->[前端安全系列（一）：如何防止XSS攻击？](https://tech.meituan.com/2018/09/27/fe-security.html)
+> [前端安全系列（一）：如何防止XSS攻击？](https://tech.meituan.com/2018/09/27/fe-security.html)
 > [前端安全系列（二）：如何防止CSRF攻击？](https://tech.meituan.com/2018/10/11/fe-security-csrf.html)
 ### 一、XSS —— 跨站脚本攻击
+##### 1、是什么
+XSS 攻击是页面被注入了恶意的代码，url 或者 表单等注入等。就是把不可信的数据当作代码执行了。
+##### 2、怎么解决
+- 后端存之前转义
+- 前端转义: 主要是```& < > ```
+- 尽量避免 v-html/dangerouslySetInnerHTML/innerHTML，href、location等不拼接不可信字符串
+- HTTP-only Cookie
+- CSP
+
 ### 二、CSRF —— 跨站请求伪造
 #### 1. 是什么
-- 受害者登录a.com，登陆并产生登录凭证（Cookie）。
-- 攻击者引诱受害者访问b.com, 从而拿到受害者的登录凭证（Cookie）
-- b.com 向 a.com 发送了一个请求：a.com/act=xx。浏览器会默认携带a.com的Cookie。
-- a.com接收到请求后，对请求进行验证，并确认是受害者的凭证，误以为是受害者自己发送的请求。
-- a.com以受害者的名义执行了act=xx。
-- 攻击完成，攻击者在受害者不知情的情况下，冒充受害者，让a.com执行了自己定义的操作。
-- 大致分为：GET类型的CSRF, POST类型的CSRF(一个自动提交的表单), 
-
+- 小明登录A后，被诱导访问B，B冒用小明在A网站的登录凭证(Cookie)后自动发起一些get/post请求，即B冒用A做一些操作。
+- 注意：整个过程攻击者并不能获取到受害者的登录凭证，仅仅是“冒用”。
+- CSRF通常是跨域的，因为外域通常更容易被攻击者掌控。但是如果本域下有容易被利用的功能，比如可以发图和链接的论坛和评论区，攻击可以直接在本域下进行，而且这种攻击更加危险。
+- CSRF总结: 通常发生在第三方, 攻击者不能获取到Cookie等信息
 #### 2. 如何解决
-- 后端验证请求头的referer(直接输入地址没有referer), 缺点如下
-  - 用户可以自己设置不带referer，会被误认为是crsf
-  - referer可能被篡改
-- Chrome 80浏览器的SameSite属性默认为Lax(Chrome 51新增该属性，之前默认为None)，对cookie携带做了限制。
-  - Strict 仅允许一方请求携带 Cookie，即浏览器将只发送相同站点请求的 Cookie，即当前网页 URL 与请求目标 URL 完全一致。
-  - Lax 允许部分第三方请求携带 Cookie
-  - None 无论是否跨站都会发送 Cookie
-  ![samesite各属性值区别](../media/samesite.png)
+- 通常发生在第三方: 阻止不明外域的访问 —— 同源检测、Samesite Cookie
+  - 同源检测：验证 HTTP Referer(协议+域名+查询参数, 不包含锚点信息) 或者 Origin(协议+域名+端口)
+  - Samesite Cookie
+- 攻击者不能获取到Cookie: 提交时要求附加本域才能获取的信息 —— CSRF Token
+  - 主要Token本身一般不放在Cookie里
+- 其他
+  - 严格管理所有的上传接口，防止任何预期之外的上传内容（例如HTML）
+  - 对于用户上传的图片，进行转存或者校验。不要直接使用用户填写的图片链接。
+  - 当前用户打开其他用户填写的链接时，需告知风险
 
 ### 三、SQL注入
-
-#### 1. 是什么
+##### 1. 是什么
 原sql
 ```sql
 const sql = `select * from user where username='${username}' and password='${password}'`
@@ -39,31 +44,17 @@ password-Input: xxx or '1=1
 ```sql
 select * from user where username='xxx' or '1=1' and password='xxx' or '1=1'
 ```
-#### 2. 如何解决
+#####  2. 如何解决
 - 前端做输入校验，如：不允许输入特殊字符
 - 后端对关键字符做转换，如：mysql.escape(xxxx)
 
-
-
-https://blog.csdn.net/duninet/article/details/111171699
-
-
-
-# react
-JSX 防止注入攻击
-你可以安全地在 JSX 当中插入用户输入内容：
-
+### 四、React如何防止XSS
+React DOM 在渲染所有输入内容之前，默认会进行转义。它可以确保在你的应用中，永远不会注入那些并非自己明确编写的内容。所有的内容在渲染之前都被转换成了字符串。这样可以有效地防止 XSS（cross-site-scripting, 跨站脚本）攻击。除非使用了dangerouslySetInnerHTML
 ```js
 // 直接使用是安全的：
 const title = response.potentiallyMaliciousInput;
 const element = <h1>{title}</h1>;
 ```
 
-React DOM 在渲染所有输入内容之前，默认会进行转义。它可以确保在你的应用中，永远不会注入那些并非自己明确编写的内容。所有的内容在渲染之前都被转换成了字符串。这样可以有效地防止 XSS（cross-site-scripting, 跨站脚本）攻击。
-
-
-必须要转译的字符
- 1)  &lt; (<)
- 2)  &gt; (>)
- 3)  &amp; (&)
- https://stackoverflow.com/questions/7381974/which-characters-need-to-be-escaped-in-html
+### 五、CSP
+在Content-Security-Policy头里配置策略，指定什么样的资源是可以安全加载的，不在策略内的就拒绝加载，主要方式XSS

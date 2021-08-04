@@ -14,6 +14,21 @@ HTTP是无状态协议，部分网络请求需要知道用户上一次做了什�
   - Cookie的功能本质上是客户端即浏览器实现的
   - Cookie中如果设置了HttpOnly属性，那么通过js脚本将无法读取到cookie信息
 
+#### 属性
+- Secure属性: 只有https时候传输Cookie
+- SameSite: Cookie 在跨站请求时不会被发送，从而可以阻止CSRF
+  - Strict 仅允许同站携带Cookie
+  - Lax 允许部分请求携带 Cookie (链接，预加载，get表单)
+  - None 无论是否跨站都会发送 Cookie
+  - 原来默认是None现在默认Lax
+  - 解决: SameSite=none 属性，同时加上 Secure 属性 (HTTP 接口不支持 SameSite=none)
+  - 之前默认是 None 的，Chrome80 后默认是 Lax。
+- 跨域和跨站:
+  - 同站(same-site)/跨站(cross-site) 和 第一方(first-party)/第三方(third-party) 概念等同
+  - 不同源即跨域，同源指 协议 + 域名 + 端口相同
+  - 同站指两个 URL 的 eTLD(效顶级域名)+1 相同即可，不需要考虑协议和端口
+
+
 ### Cookie、SessionStorage、LocalStorage对比
 <table>
     <tr>
@@ -44,7 +59,3 @@ HTTP是无状态协议，部分网络请求需要知道用户上一次做了什�
 - 类似localStorage存储在本地。“The only limits on the size of the IndexedDB database will be the user's disk space and operating system.”
 - localStorage有5MB的存储限制，不提供搜索功能，不能建立索引,而IndexDB没有存储限制，提供查找接口，还能建立索引。就是一个数据库～
 - IndexedDB 和 WebSQL都是存储的解决方案，WebSQL从2010开始逐步废弃。
-
-### Trust Tokens
-- Google 2020年新提出的，用于防范身份欺诈、鉴别人类与机器的 API 规范，Chrome 89 已经加入了 Trust Tokens。
-- 具体有空可看看 https://web.dev/trust-tokens/
