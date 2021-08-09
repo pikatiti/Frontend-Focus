@@ -16,25 +16,25 @@
   - [执行上下文栈](base/javascript/ecStack.md)
   - [ECMAScript](base/javascript/es.md)
 
-  - [闭包（未完成）](base/javascript/closure.md)
-  - [设计模式](base/javascript/closure.md)
+  - [闭包](base/javascript/closure.md)
+  - [事件委托冒泡]
 - **React**
+  - [React Fiber](base/react/fiber.md)
+  - [生命周期函数](base/react/lifecycles.md)
   - [小问题汇总](base/react/qa.md)
-
   - [Hooks差异和对比](base/react/hooks.md)
   - [setState同步异步](base/react/state.md)
-  - [生命周期函数](base/react/lifecycles.md)
-  - [React Fiber](base/react/fiber.md)
   - [react key](base/react/key.md)
   - [Virtual DOM & Diff](base/react/virtualDom.md)
   - [HOC](base/react/hoc.md)
-
   - [Mobx]
-
 - **工程化**
-  - [webpack](base/project/webpack.md)
+  - [webpack基础](base/project/webpack.md)
+  - [loader](base/project/loader.md)
+  - [postcss]
   - [babel](base/project/babel.md)
   - [模块化](base/project/module.md)
+  - [babel把ES6转成ES5或者ES3之类的原理]
 - **计算机网络**
   - [Proxy代理](base/network/proxy.md)
   - [状态码Status Code](base/network/code.md)
@@ -73,8 +73,7 @@
 
   - [层叠上下文](base)
   - [flex](base/guide.md)
-- **亮点**
-  - [打包优化]
-  - [下载]
-- **面试复盘**
+- **其他**
+  - [打包优化](base)
+  - [个人](base/other/personal.md)
 

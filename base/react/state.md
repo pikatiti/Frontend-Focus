@@ -4,6 +4,4 @@
 - 同步：其他
 - 但是之后React会批量更新更多场景
 
-- setState原理：既能同步执行又能异步执行
-  - isBatchingUpdates来标识是否批量更新，用一个队列来保存setState的数据(state, 当前component)，然后在一段时间后，清空这个队列并渲染组件。
-  - 延迟执行：js的事件队列机制。
+- setState原理：
