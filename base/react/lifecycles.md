@@ -22,3 +22,5 @@
 - getSnapshotBeforeUpdate —— 在发生更改之前从 DOM 中捕获一些信息给...DidUpdate
 
 - conponentDidMount：render之后执行，在其中直接调用 setState()。它将触发额外渲染re-render，render --> re-render --> 页面绘制到浏览器，所以这个re-render是用户无感的。
+- React16哪些生命周期方法将被废弃 —— ...WillMount、...WillReceiveProps、...WillUpdate
+  - 为什么：主要是用了Fiber架构，

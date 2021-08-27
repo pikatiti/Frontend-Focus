@@ -21,11 +21,17 @@
 - **React**
   - [React Fiber](base/react/fiber.md)
   - [生命周期函数](base/react/lifecycles.md)
+  - [小问题汇总](base/react/qa.md)
+  - [生命周期函数](base/react/lifecycles.md)
+
 
   - [小问题汇总](base/react/qa.md)
   - [Hooks差异和对比](base/react/hooks.md)
   - [setState同步异步](base/react/state.md)
   - [react机制](base/react/mechanism.md)
+  - [React Fiber](base/react/fiber.md)
+  - [react key](base/react/key.md)
+  - [Virtual DOM & Diff](base/react/virtualDom.md)
   - [HOC](base/react/hoc.md)
   - [Mobx]
 - **工程化**

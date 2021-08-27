@@ -5,6 +5,7 @@
 - React 的 Reconcilation 就是长任务，react15的时候由于Reconcilation计算量过大会导致页面渲染掉帧
 - 所以16使用了Fiber架构：Reconcilation 过程变成可被中断。
 
+|27 | [什么是 React Fiber?](#什么是-react-fiber) |
 
 - 不卡顿: 每秒绘制不少于60帧，即16ms一帧。
 - 浏览器: 处理绘制等行为之后还有盈余时间，就会调用“requestIdleCallback的回调”(避免饿死还可以根据优先级设置超时时间)，将剩余时间片交给React
@@ -54,3 +55,15 @@
       - componentWillUnmount
   - ！！Reconcilation阶段可能被中断、恢复，甚至重做。所以协调阶段的生命周期钩子可能会被调用多次! 因此建议协调阶段的生命周期钩子不要包含副作用。索性 React 就废弃了这部分可能包含副作用的生命周期方法 —— 3个Will
 
+
+
+- 为什么用React Fiber: React的Reconcilation阶段在v15的时候采用递归对比vdom树，递归无法中断，JS线程被长期占用，从而1.导致用户触发的事件得不到响应(JS引擎是单线程), 2.掉帧、页面卡顿。(JS引擎线程和GUI线程互斥)
+- 目标：高优先级的进程或者短进程优先运行，不能让长进程长期霸占资源
+- React如何处理：通过Fiber架构，让Reconcilation过程变成可中断，'适时'地让出控制权给浏览器去处理高优先级的其他任务，待浏览器空闲后再继续执行。
+- Fiber实现原理：
+  - 不卡顿，至少保持60hz的刷新频率，也就是1s至少绘制60帧，每帧能分到的时间片就是16ms
+
+
+
+
+#  webworker
