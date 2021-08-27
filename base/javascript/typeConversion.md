@@ -3,8 +3,8 @@
 >[对象 — 原始值转换](https://zh.javascript.info/object-toprimitive)
 >[](https://github.com/mqyqingfeng/Blog/issues/159)
 
-### 数据类型 -- 7种
-- 原始类型：undefined、Boolean、Number、String、BigInt、Symbol
+### 数据类型 -- 8种
+- 原始类型：Undefined、Boolean、Number、String、BigInt、Symbol、Null
 - 引用类型：Object
 
 ### 原始 ——> String
@@ -31,6 +31,7 @@ String(-0) // 0
 - 其他
 ```js
 Number(undefined) //NaN
+Number(NaN) // NaN
 Number(null) // 0
 Number() // 0
 Number([]) // 0
@@ -79,6 +80,7 @@ Number([]) // 0
 {}.valueOf() // {}
 {}.toString() // "[object Object]"
 Number({}) // NaN
+Number([1]) // 1
 ```
 
 ### Object ——> Boolean

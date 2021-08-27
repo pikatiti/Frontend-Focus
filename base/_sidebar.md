@@ -15,25 +15,25 @@
   - [this](base/javascript/this.md)
   - [执行上下文栈](base/javascript/ecStack.md)
   - [ECMAScript](base/javascript/es.md)
-
   - [闭包](base/javascript/closure.md)
+  
   - [事件委托冒泡]
 - **React**
   - [React Fiber](base/react/fiber.md)
   - [生命周期函数](base/react/lifecycles.md)
+
   - [小问题汇总](base/react/qa.md)
   - [Hooks差异和对比](base/react/hooks.md)
   - [setState同步异步](base/react/state.md)
-  - [react key](base/react/key.md)
-  - [Virtual DOM & Diff](base/react/virtualDom.md)
+  - [react机制](base/react/mechanism.md)
   - [HOC](base/react/hoc.md)
   - [Mobx]
 - **工程化**
+  - [模块化](base/project/module.md)
   - [webpack基础](base/project/webpack.md)
   - [loader](base/project/loader.md)
   - [postcss]
   - [babel](base/project/babel.md)
-  - [模块化](base/project/module.md)
   - [babel把ES6转成ES5或者ES3之类的原理]
 - **计算机网络**
   - [Proxy代理](base/network/proxy.md)
@@ -56,6 +56,7 @@
   - [EventLoop](base/browser/eventloop.md)
   - [跨域问题](base/browser/cors.md)
   - [浏览器原理](base/browser/other.md)
+  - [history和hash路由](base/browser/router.md)
 - **手写题**
   - [Instanceof](base/codeWriting/instanceof.md)
   - [new](base/codeWriting/new.md)
@@ -71,9 +72,11 @@
   - [格式化上下文BFC](base/css/bfc.md)
   - [居中问题](base/css/centered.md)
 
+  - [其他小问题](base/css/qa.md)
   - [层叠上下文](base)
   - [flex](base/guide.md)
 - **其他**
   - [打包优化](base)
   - [个人](base/other/personal.md)
+  - [项目](base/other/project.md)
 

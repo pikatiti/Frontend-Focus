@@ -139,6 +139,20 @@ Promise.all = function(promises) {
   })
 }
 
+Promise.all = function(promises) {
+  return new Promise((resolve, reject) => {
+    let count = 0
+    const arr = []
+    for (let i = 0; i < promises.length; i++) {
+      promises[i].then(v => {
+        
+      }, r => {
+
+      })
+    }
+  })
+}
+
 // Promiserace(), 
 Promise.race = function(promises) {
   return new Promise((resolve, reject) => {

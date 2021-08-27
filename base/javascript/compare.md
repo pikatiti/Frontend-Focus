@@ -14,6 +14,14 @@ undefined == null // true
 NaN === NaN // false
 ```
 
+### Object.is
+它与严格比较运算符（===）基本一致，不同之处只有两个：一是+0不等于-0，二是NaN等于自身。
+```js
++0 === -0 // true
+NaN === NaN // false
+Object.is(+0, -0) // false
+Object.is(NaN, NaN) // true
+```
 ### 奇怪的题目
 ```js
 [] == 0 // true

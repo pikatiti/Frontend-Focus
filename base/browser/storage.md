@@ -27,6 +27,7 @@ HTTP是无状态协议，部分网络请求需要知道用户上一次做了什�
   - 同站(same-site)/跨站(cross-site) 和 第一方(first-party)/第三方(third-party) 概念等同
   - 不同源即跨域，同源指 协议 + 域名 + 端口相同
   - 同站指两个 URL 的 eTLD(效顶级域名)+1 相同即可，不需要考虑协议和端口
+  - css实现一个圆？如果border-radius设置100%会怎么样？ 实现一个半圆呢？
 
 
 ### Cookie、SessionStorage、LocalStorage对比

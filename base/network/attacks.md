@@ -10,7 +10,7 @@ XSS 攻击是页面被注入了恶意的代码，url 或者 表单等注入等�
 - 前端转义: 主要是```& < > ```
 - 尽量避免 v-html/dangerouslySetInnerHTML/innerHTML，href、location等不拼接不可信字符串
 - HTTP-only Cookie
-- CSP
+- CSP: Content-Security-Policy加上各种策略
 
 ### 二、CSRF —— 跨站请求伪造
 #### 1. 是什么

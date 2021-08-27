@@ -14,10 +14,13 @@ JS继承只有一种结构: 对象。每个"实例对象"都有一个私有属�
   - [[Prototype]]是对象的内置属性，指向这个对象的原型，可以通过.\_\_ptoto__(已废弃) 或者 Object.getPrototypeOf/Reflect.getPrototypeOf 获取
   - 每函数都有一个prototype熟悉，记住 构造函数 prototype 指向 实例的 \[[Prototype]]就好了。F.prototype.constructor指向自身
 
+##### 2. 什么是原型
+- js没有类，原型是用于模拟类的。一个toString方法，只要在原型上定义过一次，就不需要每个实例再重新写一遍。
+
 ##### 3. 混淆点
 ```js
 funciton Person() {
-  // ⬇ 在实例上添加name属性
+  // ⬇ 如Person是类的一个方法，则此处在实例上添加name属性
   this.name = 'Mike'
 }
 
@@ -31,4 +34,21 @@ Person.getAge = function() {
 const person1 = new Person()
 ```
 
+
+```js
+
+Function.prototype.a = () => {
+console.log(1);
+};
+Object.prototype.b = () => {
+console.log(2);
+};
+function A() {}
+const a = new A();
+
+a.a();
+a.b();
+A.a();
+A.b();
+```
 ##### 2. [实现一个new](base/codeWriting/new.md)

@@ -34,6 +34,22 @@ obj.user.name = 'Nike' // 修改有效，只能保证第一层属性不可变
 - 只会提升声明，不会提升其初始化，函数和变量相比，会被优先提升。(函数提升的是声明不是表达式，[箭头函数](base/javascript/arrowfunc.md)中提到过声明和表达式的区别)
 - 和执行上下文变量对象创建那有关～
 
+```js
+console.log(str,num);
+var str = "sfd";
+var num = "123"
+function fn2() {
+    console.log(str,num);
+    str = "dfdg";
+    var num = "345";
+    num = "098";
+    str = "candy";
+    console.log(str,num);
+}
+fn2();
+console.log(str,num);
+```
+
 
 ### let、const 和 var的区别
 

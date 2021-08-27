@@ -1,0 +1,13 @@
+- 高级类型
+  - 范型<T>，Array<object>
+  - 可选链运算符 ?.
+  - extends
+  - readonly id: number;
+  - void 表示函数没有返回值
+  - 元祖 a: [string, number]
+  - as, document.getElementById() as HTMLxxx
+  - interface 定义接口，implements 实现接口
+  - extends继承
+- interface 和 type的区别
+  - interface是接口，type是类型, 只是两个碰巧能实现一些相同的功能，比如定义一个对象
+  - interface可以声明合并，type可以typeof

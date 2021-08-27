@@ -23,6 +23,8 @@ let person = _new(User, ...)
 - 构造原型链
 - 改变构造函数this指向，并执行（为这个this(新对象)添加属性）
 - 函数有‘object’类型返回值，则返回；否则，返回新对象(null不是object类型哦！return null还是返回原this)
+- super的作用
+  - new是先创建对象再绑定this，es6的class是先创建实例，再修改this。super是调用父类的构造函数，此时创建的对象this指向父类，再改变this指向指向子类。
 
 ### 二、其他知识点
 #### 1. new.target

@@ -38,4 +38,3 @@ HTTP最早被用来做浏览器与服务器之间交互HTML和表单的通讯协
   - get能缓存：因为对get的定义就是获取资源，没有副作用幂等的，所以一般可以进行缓存，加速获取。
   - 编码：本质是url和body的编码区别，url的参数只能支持部分ASCII码，但是二进制和中文也可以通过编码后拼上去。body通过Content-Type来定义body的格式（application/x-www-form-urlencoded）和字符编码（UTF-8）。
   - 其他：get回退无害，参数会被保存在历史记录等等。
-

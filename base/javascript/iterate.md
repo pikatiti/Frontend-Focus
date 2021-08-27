@@ -128,7 +128,7 @@ Generator 是 Iterator的改进
 
 Generator 和 Async/Await都是使用Promise的“载体”
 
-通过Generator + Promise 或者 Async/Await + Promise 可以解决会掉地狱的问题
+通过Generator + Promise 解决回调地狱的问题
 
 async/await 是 Generator + Promise 的语法糖～
 

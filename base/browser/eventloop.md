@@ -8,8 +8,8 @@
 - 当JS主线程执行完同步任务执行栈之后，事件触发线程会从消息队列取出头部任务加入到执行栈。
 - 这样形成的循环叫做事件循环
 
-- 宏任务：script(整体代码)、setTimeout, setInterval、IO操作等
-- 微任务: Promise.then/catch/finally...
+- 宏任务：script(整体代码)、setTimeout, setInterval、requestAnimationFrame、setImmediate、IO操作等
+- 微任务: Promise.then/catch/finally... 
 - 每执行完一个宏任务，都会清空之后的微任务队列。
 - 大概过程：执行同步脚本(宏任务) => 清空微任务队列 => 任务队列出队一个宏任务setTimeout到执行栈被执行 => 清空微任务队列...
 

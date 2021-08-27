@@ -13,7 +13,9 @@ let proxy1 = new Proxy(obj, {})
 proxy1.name = 'Mike'
 // 此处proxy1没有定义set捕捉器，将直接对obj的name进行更改
 ```
-
+- Object.defineProperty 和 Proxy区别
+  - defineProperty是直接修改对象
+  - Proxy包装了一层对象，用户可以自定义行为
 ### Reflect
 它提供拦截 JavaScript 操作的方法，提供的方法同Proxy的handler
 ```js

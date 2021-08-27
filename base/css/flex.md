@@ -1,0 +1,19 @@
+- 设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。
+- diaplay：flex的元素——flex container，容器子元素——flex item。
+- 主轴main axis：默认水平，交叉轴cross axis：默认垂直
+- container 属性
+  - flex-direction：主轴方向
+  - flex-wrap: item一行排不下的时候怎么做
+  - flex-flow: flex-direction flex-wrap
+  - justify-content: item在主轴上的对齐方式
+  - align-items: 交叉轴方向怎么对其
+    - baseline: 项目的第一行文字的基线对齐。
+    - stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度
+  - align-content
+- item 属性
+  - order：数值越小，排列越靠前，默认为0
+  - flex-grow：定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大
+  - flex-shrink：flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小
+  - flex-basis：在分配多余空间之前，项目占据的主轴空间。浏览器这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。
+  - flex：flex-grow flex-shrink flex-basis（flex 1即flex-grow 1）
+  - align-self：align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。
